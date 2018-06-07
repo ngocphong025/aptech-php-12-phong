@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bai Thi-Nguyen Ngoc Phong</title>
+	<title>Bai Thi-Nguyen Ngoc Phong - @yield('title')</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+@section('sidebar')
 	<header class="header">
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
@@ -29,7 +30,7 @@
 		        <li class="active"><a href="#">Trang chủ</a></li>
 		        <li><a href="#">Khoá học</a></li>
 		        <li><a href="#">Môn học</a></li>
-		        <li><a href="#">Giáo viên</a></li>
+		        <li><a href="#">Liên Hệ</a></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="#" data-toggle="modal" data-target="#modalLogin">Đăng nhập</a></li>
@@ -38,6 +39,7 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 	</header>
+	@show
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-9 hot-news">
